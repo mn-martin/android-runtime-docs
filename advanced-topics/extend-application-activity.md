@@ -54,8 +54,7 @@ The following steps are needed to create custom native `android.app.Application`
         protected onCreate(): void {
             super.onCreate();
 
-            // initialize the modules with the custom application object
-            application.android.init(this);
+            // At this point modules have already been initialized
 
             // Enter custom initialization code here
         }
