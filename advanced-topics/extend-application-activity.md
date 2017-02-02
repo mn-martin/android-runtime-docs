@@ -34,8 +34,6 @@ The following steps are needed to create custom native `android.app.Application`
         onCreate: function() {
             superProto.onCreate.call(this);
 
-            // At this point modules have already been initialized
-
             // Enter custom initialization code here
         },
         attachBaseContext: function(base) {
@@ -53,8 +51,6 @@ The following steps are needed to create custom native `android.app.Application`
     class Application extends android.app.Application {
         protected onCreate(): void {
             super.onCreate();
-
-            // At this point modules have already been initialized
 
             // Enter custom initialization code here
         }
